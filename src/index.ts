@@ -1,4 +1,4 @@
-import { render } from './coloredTriangle/coloredTriangle';
+import { render } from './multipleTexture/multipleTexture';
 
 function main() {
     const canvas: HTMLCanvasElement = document.querySelector('#webgl');

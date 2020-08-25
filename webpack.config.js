@@ -18,13 +18,20 @@ module.exports = {
         test: /\.(vert|frag)$/,
         use: 'raw-loader',
       },
+      {
+        test: /\.(jpg|png|gif)$/,
+        use: 'file-loader',
+      }
     ],
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      src: path.resolve(__dirname, 'src'),
+    }
   },
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };

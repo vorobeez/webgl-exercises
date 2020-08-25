@@ -15,3 +15,9 @@ export function checkBuffer(buffer: WebGLBuffer): void {
         throw new Error('Failed to create a buffer object.');
     }
 }
+
+export function checkTexture(texture: WebGLTexture): void {
+    if (texture === null) {
+        throw new Error('Failed to create a texture.');
+    }
+}
